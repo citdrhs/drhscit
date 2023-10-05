@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    z-index: 10;
+}
+
+body {
+    background-color: rgb(247, 241, 241);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: Helvetica Neue, 'Manrope', sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+  font-family: Helvetica, 'Manrope', sans-serif;
+  font-weight: 200;
+  font-size: 24;
+}
+
+h3, h4 {
+  font-family: Helvetica, 'Manrope', sans-serif;
+  font-size: 12;
+  font-weight: 100;
+}
+
+p {
+    font-size: 16px;
+    margin: 0px;
+}
+
+ul {
+    padding-left: 20px;
+    margin-bottom: 0px;
+}
+
+.col-4 ul, .col-8 ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+img {
+    border: 0px solid rgba(255, 255, 255, 0);
+    border-radius: 12px;
+}
+
+.spacing {
+    height: 20px;
+}
+
+.spacing-extra {
+    height: 35px;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+}
+
+.link-card {
+  padding: 25px;
+    background-color: white;
+    text-align: left;
+    border: 0px solid white;
+    border-radius: 12px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .12);
+    transition: box-shadow 100ms, transform 400ms ease-in-out;
+}
+
+.link-card:hover {
+  box-shadow : 0 0px 8px rgba(0,0,0,.20);
+    transform:scale(1.02,1.02);
+      -webkit-transition : box-shadow ease-in-out .15s,transform 400ms;
+      transition : box-shadow ease-in-out .15s, transform 400ms;
+}
+
+.link-card:hover::after {
+  transform:scale(1.02,1.02);
+}
+
+.custom-card {
+    padding: 25px;
+    background-color: white;
+    text-align: left;
+    border: 0px solid white;
+    border-radius: 12px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .12);
+}
+
+.card-body {
+    min-height: 200px;
+    height: auto;
+}
+
+#main_card {
+    color: rgb(255, 255, 255);
+    padding: 25px;
+    background: url('web_images/IMG_3762.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#now_card {
+    color: rgb(255, 255, 255);
+    padding: 25px;
+    background: url('web_images/AidenAaron.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#now1_card {
+    color: rgb(255, 255, 255);
+    padding: 25px;
+    background: url('web_images/citproj.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#now2_card {
+    color: rgb(255, 255, 255);
+    padding: 25px;
+    background: url('web_images/unitcircle2.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button {
+    color: white;
+    background-color: rgb(255, 255, 255, 0);
+    padding: 4px 12px;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: background-color 400ms, color 400ms;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+}
+
+.card-body button, .card-body a {
+    padding: 0px;
+    color: black;
+}
+
+.card-body button:hover {
+    color: #0075c9;
+}
+
+.nav-tabs button {
+    color: Black;
+}
+
+.slider {
+    height: 250px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.panel {
+    
+    padding: 5px;
+    width: 100%;
+
+}
+
+
+.car-class {
+
+    height: 250px;
+    width: 100%;
+
+    background-color: white;
+
+    border: 0px solid white;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 10px;
+}
+
+.footer {
+    padding: 15px;
+}
+
+.intro-div{
+    position: absolute; 
+    top: 0px; 
+    width: 100%; 
+    height: 315px; 
+    z-index: 1; 
+    background: linear-gradient(135deg, rgb(0, 106, 188) 0%, rgb(1, 71, 136) 100%);
+}
+
+.after-intro-div {
+    position: absolute;
+    top:0px;
+    width:100%;
+    height:350px;
+    z-index:-1;
+    background:linear-gradient(180deg,rgb(0,0,0)0%,rgb(247, 241, 241)100%);
+
+}
+
+.text-tab {
+    padding-right:30px;
+}
+
+.code p {
+    font-family: input-serif;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+    max-width: 960px;
+    
+
+    padding: 0px 8px 0px 25px;
+}
+
+.student-quote {
+    background-color: #d4f1ff; 
+    padding: 25px 15px; 
+    margin-top: 15px; 
+    border: 0px solid white; 
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clickable {
+    box-shadow: 0 100px 80px rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    transition: padding 400ms;
+}
+
+.clickable:hover {
+    padding: 15px 18px;
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .intro-div {
+        position: absolute; 
+        top: 0px; 
+        width: 100%;  
+        z-index: 1;
+        height: 500px;
+    }
+
+}
+
+.nav-link {
+  padding: .5rem .71rem
+}
+
+.link-class {
+  padding: .5rem .71rem;
+  color: Black;
+}
+
+.link-class:hover {
+  color:Gray;
+  text-decoration:none;
+}
+
+.topnav {
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: Black;
+  text-align: center;
+  padding: 15px .5rem;
+  text-decoration: none;
+  font-size: 17px;
+
+  transition-property: color;
+  transition-duration:.27s;
+  transition-timing-function: ease-in-out;
+}
+
+.topnav a:hover {
+  color: rgb(129, 129, 129);
+  
+  transition-property: color;
+  transition-duration: .27s;
+  transition-timing-function: ease-in-out;
+}
+
+.topnav-logo
+{
+  padding: 0px 6px;
+}
+
+.one-fourht-card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.one-fourht-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.new-card {
+  transform: scale(1,1);
+  display: inline-block;
+    position: relative;
+    height: 200px;
+    width: 100%;
+    padding: 25px;
+    background-color: white;
+    text-align: left;
+    border: 0px solid white;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
+    transition: transform 400ms ease-in-out, box-shadow 400ms ease-in-out;
+    
+}
+
+.new-card:hover {
+  text-align: left;
+  transform: scale(1.02,1.02);
+  box-shadow: 55px 5px 25px rbga(0,0,0,1.57);
+}
+
+svg {
+    overflow: overlay;
+    vertical-align: middle;
+}
+
+.square {
+    width: 200px;
+    height: 2000px;
+    background: teal;
+    border-radius: 8px;
+    opacity: 0;
+    transform: scale(1.2);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .square {
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+}
+
+.square-transition {
+    opacity: 1;
+    transform: none;
+}
+
+.testClass {
+  display: block;
+  position: absolute;
+  text-align: center;
+  left: 38px;
+  top: 550px
+}
+
+
+
+
+
+
+
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+.quiz label {
+  margin-right: 15px;
+  line-height: 32px;
+}
+
+.quiz input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+
+.quiz input:checked {
+  border: 6px solid black;
+}
+
+
+.quiz button {
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 0;
+  border: 0;
+  font-size: 14px;
+}
+
+.quiz button:hover,
+button:focus {
+  color: #999;
+}
+
+.quiz button:active {
+  background-color: white;
+  color: black;
+  outline: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+.correct label {
+  margin-right: 15px;
+  line-height: 32px;
+}
+
+.correct input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+
+.correct input:checked {
+  border: 6px solid green;
+}
+
+
+.correct button {
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 0;
+  border: 0;
+  font-size: 14px;
+}
+
+.correct button:hover,
+button:focus {
+  color: #999;
+}
+
+.correct button:active {
+  background-color: white;
+  color: black;
+  outline: 1px solid black;
+}
